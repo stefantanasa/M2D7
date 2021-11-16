@@ -516,6 +516,14 @@
         }
       };
       removeList();
+
+      //EX15) Write a function to change the column size for heading in jumbotron
+      const changesHeaderColSize = function () {
+        let changeHeader = document.querySelector(".jumbotron h1");
+        changeHeader.style.backgroundColor = "yellow";
+        changeHeader.classList.add("col-12");
+      };
+      changesHeaderColSize();
     </script>
   </body>
 </html>

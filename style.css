@@ -31,6 +31,3 @@ div > .blog-post {
 footer {
   background-color: skyblue;
 }
-.p-4:last-child a:last-child {
-  background-color: yellow;
-}
