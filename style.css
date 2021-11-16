@@ -1,3 +1,6 @@
 .jumbotron h1 {
   color: rgb(255, 89, 200);
 }
+nav {
+  background-color: cyan;
+}
