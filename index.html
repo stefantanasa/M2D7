@@ -505,6 +505,17 @@
         jumbo.style.backgroundColor = "green";
       };
       changeBg();
+      // EX14) Write a function to remove all the links under "Elsewhere"
+
+      const removeList = function () {
+        let list = document.querySelectorAll(".p-4:last-child a:last-child");
+        list[0].style.backgroundColor = "green";
+        console.log(list[0]);
+        for (i = 0; i < list.length; i++) {
+          list[i].remove();
+        }
+      };
+      removeList();
     </script>
   </body>
 </html>
