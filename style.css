@@ -8,3 +8,6 @@ nav {
 .jumbotron > div > p > a {
   background-color: darkgoldenrod;
 }
+div > .blog-post {
+  background-color: rgb(227, 248, 255);
+}
