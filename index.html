@@ -541,9 +541,8 @@
 
       // EX18) Write a function and attach it to the "Newer" button,
       // to add new Blog Post (just div and title)
-
+      let blogPostMainNode = document.querySelector(".blog-main");
       const addNewPost = function () {
-        let blogPostMainNode = document.querySelector(".blog-main");
         let newPost = document.createElement("div");
         newPost.innerHTML = "<h2> New Blog Post Title </h2>";
         newPost.classList.add("blog-post");
@@ -554,7 +553,13 @@
         ".blog-pagination > .btn-outline-secondary"
       );
       getButton.classList.remove("disabled");
-      getButton.addEventListener("click", addNewPost());
+      getButton.removeAttribute("href");
+      getButton.addEventListener("click", function () {
+        let newPost = document.createElement("div");
+        newPost.innerHTML = "<h2> New Blog Post Title </h2>";
+        newPost.classList.add("blog-post");
+        blogPostMainNode.insertBefore(newPost, blogPostMainNode.children[1]);
+      });
     </script>
   </body>
 </html>
