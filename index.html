@@ -478,6 +478,17 @@
           EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
           EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
       */
+      let navNode = document.getElementsByClassName(
+        "nav d-flex justify-content-between"
+      );
+      const addLink = function () {
+        let newLink = document.createElement("a");
+        newLink.innerText = "New Link Added";
+        newLink.className = "p-2 text-muted";
+        newLink.href = "#";
+        navNode[0].appendChild(newLink);
+      };
+      addLink();
     </script>
   </body>
 </html>
