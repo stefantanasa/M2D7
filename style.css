@@ -25,3 +25,6 @@ div > .blog-post {
   background-color: tomato;
 }
 /*doesn't selects the second child*/
+.blog-footer p:nth-child(2) > a {
+  background-color: rosybrown;
+}
