@@ -524,6 +524,17 @@
         changeHeader.classList.add("col-12");
       };
       changesHeaderColSize();
+
+      //EX16) Write a function to remove the "Search" magnifying glass icon
+      let removeLoop = function () {
+        let svgNode = document.querySelector(".text-muted svg");
+        // to remove it
+        svgNode.remove();
+        //to not display:
+        //svgNode.classList.add("d-none");
+      };
+
+      removeLoop();
     </script>
   </body>
 </html>
