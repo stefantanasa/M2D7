@@ -21,7 +21,7 @@ div > .blog-post {
   background-color: red;
 }
 
-.blog-post-meta > a:nth-child(1) {
+.blog-post:nth-child(3) h2 + p a {
   background-color: tomato;
 }
 /*doesn't selects the second child*/
