@@ -495,6 +495,19 @@
         titleNode[0].style.color = "black";
       };
       changeTitle();
+
+      let jumbo = document.querySelector(
+        ".jumbotron.p-4.p-md-5.text-white.rounded.bg-dark"
+      );
+      jumbo.classList.add("jsDom");
+
+      let jumbo2 = document.querySelector(
+        ".jumbotron.p-4.p-md-5.text-white.rounded.bg-dark.jsDom"
+      );
+      console.log(jumbo2.classList);
+
+      jumbo2.style.backgroundColor = "green";
+      //does not overwrite.
     </script>
   </body>
 </html>
