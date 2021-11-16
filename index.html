@@ -510,7 +510,7 @@
       const removeList = function () {
         let list = document.querySelectorAll(".p-4:last-child a:last-child");
         list[0].style.backgroundColor = "green";
-        console.log(list[0]);
+
         for (i = 0; i < list.length; i++) {
           list[i].remove();
         }
@@ -535,6 +535,26 @@
       };
 
       removeLoop();
+
+      /*EX17) Write a function to trim just the first 50
+       characters in the first paragraph for each blog post*/
+
+      // EX18) Write a function and attach it to the "Newer" button,
+      // to add new Blog Post (just div and title)
+
+      const addNewPost = function () {
+        let blogPostMainNode = document.querySelector(".blog-main");
+        let newPost = document.createElement("div");
+        newPost.innerHTML = "<h2> New Blog Post Title </h2>";
+        newPost.classList.add("blog-post");
+        blogPostMainNode.insertBefore(newPost, blogPostMainNode.children[1]);
+      };
+
+      let getButton = document.querySelector(
+        ".blog-pagination > .btn-outline-secondary"
+      );
+      getButton.classList.remove("disabled");
+      getButton.addEventListener("click", addNewPost());
     </script>
   </body>
 </html>
