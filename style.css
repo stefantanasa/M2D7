@@ -28,3 +28,6 @@ div > .blog-post {
 .blog-footer p:nth-child(2) > a {
   background-color: rosybrown;
 }
+footer {
+  background-color: skyblue;
+}
